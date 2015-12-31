@@ -15,4 +15,8 @@
 
 @property (nonatomic, strong) IBOutletCollection(KIGroupButton) NSArray *groupButtons;
 
+- (void)addButton:(KIGroupButton *)button;
+
+- (void)removeButton:(KIGroupButton *)button;
+
 @end

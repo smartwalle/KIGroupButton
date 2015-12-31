@@ -17,6 +17,8 @@
 		182973C21C3529BF00680245 /* KICheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 182973BB1C3529BF00680245 /* KICheckBox.m */; };
 		182973C31C3529BF00680245 /* KIGroupButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182973BE1C3529BF00680245 /* KIGroupButton.m */; };
 		182973C41C3529BF00680245 /* KIRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182973C11C3529BF00680245 /* KIRadioButton.m */; };
+		D5BBCD151C35600500E24B68 /* radio_button_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BBCD131C35600500E24B68 /* radio_button_off@2x.png */; };
+		D5BBCD161C35600500E24B68 /* radio_button_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BBCD141C35600500E24B68 /* radio_button_on@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		182973BE1C3529BF00680245 /* KIGroupButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIGroupButton.m; sourceTree = "<group>"; };
 		182973C01C3529BF00680245 /* KIRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIRadioButton.h; sourceTree = "<group>"; };
 		182973C11C3529BF00680245 /* KIRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIRadioButton.m; sourceTree = "<group>"; };
+		D5BBCD131C35600500E24B68 /* radio_button_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_button_off@2x.png"; sourceTree = SOURCE_ROOT; };
+		D5BBCD141C35600500E24B68 /* radio_button_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_button_on@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 		182973931C3529A400680245 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D5BBCD131C35600500E24B68 /* radio_button_off@2x.png */,
+				D5BBCD141C35600500E24B68 /* radio_button_on@2x.png */,
 				182973941C3529A400680245 /* Info.plist */,
 				182973951C3529A400680245 /* main.m */,
 			);
@@ -238,7 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5BBCD151C35600500E24B68 /* radio_button_off@2x.png in Resources */,
 				1829739F1C3529A400680245 /* Main.storyboard in Resources */,
+				D5BBCD161C35600500E24B68 /* radio_button_on@2x.png in Resources */,
 				182973A41C3529A400680245 /* LaunchScreen.xib in Resources */,
 				182973A11C3529A400680245 /* Images.xcassets in Resources */,
 			);
@@ -454,6 +462,7 @@
 				182973B51C3529A400680245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		182973B61C3529A400680245 /* Build configuration list for PBXNativeTarget "KIGroupButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +471,7 @@
 				182973B81C3529A400680245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

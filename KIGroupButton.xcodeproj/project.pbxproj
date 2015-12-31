@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182973961C3529A400680245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182973951C3529A400680245 /* main.m */; };
+		182973991C3529A400680245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182973981C3529A400680245 /* AppDelegate.m */; };
+		1829739C1C3529A400680245 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829739B1C3529A400680245 /* ViewController.m */; };
+		1829739F1C3529A400680245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1829739D1C3529A400680245 /* Main.storyboard */; };
+		182973A11C3529A400680245 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182973A01C3529A400680245 /* Images.xcassets */; };
+		182973A41C3529A400680245 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182973A21C3529A400680245 /* LaunchScreen.xib */; };
+		182973B01C3529A400680245 /* KIGroupButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182973AF1C3529A400680245 /* KIGroupButtonTests.m */; };
+		182973C21C3529BF00680245 /* KICheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 182973BB1C3529BF00680245 /* KICheckBox.m */; };
+		182973C31C3529BF00680245 /* KIGroupButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182973BE1C3529BF00680245 /* KIGroupButton.m */; };
+		182973C41C3529BF00680245 /* KIRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182973C11C3529BF00680245 /* KIRadioButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		182973AA1C3529A400680245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182973881C3529A400680245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1829738F1C3529A400680245;
+			remoteInfo = KIGroupButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		182973901C3529A400680245 /* KIGroupButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIGroupButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		182973941C3529A400680245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182973951C3529A400680245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		182973971C3529A400680245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		182973981C3529A400680245 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1829739A1C3529A400680245 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1829739B1C3529A400680245 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1829739E1C3529A400680245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		182973A01C3529A400680245 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		182973A31C3529A400680245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		182973A91C3529A400680245 /* KIGroupButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIGroupButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182973AE1C3529A400680245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182973AF1C3529A400680245 /* KIGroupButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIGroupButtonTests.m; sourceTree = "<group>"; };
+		182973BA1C3529BF00680245 /* KICheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KICheckBox.h; sourceTree = "<group>"; };
+		182973BB1C3529BF00680245 /* KICheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KICheckBox.m; sourceTree = "<group>"; };
+		182973BD1C3529BF00680245 /* KIGroupButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIGroupButton.h; sourceTree = "<group>"; };
+		182973BE1C3529BF00680245 /* KIGroupButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIGroupButton.m; sourceTree = "<group>"; };
+		182973C01C3529BF00680245 /* KIRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIRadioButton.h; sourceTree = "<group>"; };
+		182973C11C3529BF00680245 /* KIRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIRadioButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1829738D1C3529A400680245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182973A61C3529A400680245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182973871C3529A400680245 = {
+			isa = PBXGroup;
+			children = (
+				182973921C3529A400680245 /* KIGroupButton */,
+				182973AC1C3529A400680245 /* KIGroupButtonTests */,
+				182973911C3529A400680245 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		182973911C3529A400680245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				182973901C3529A400680245 /* KIGroupButton.app */,
+				182973A91C3529A400680245 /* KIGroupButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		182973921C3529A400680245 /* KIGroupButton */ = {
+			isa = PBXGroup;
+			children = (
+				182973B91C3529BF00680245 /* KICheckBox */,
+				182973BC1C3529BF00680245 /* KIGroupButton */,
+				182973BF1C3529BF00680245 /* KIRadioButton */,
+				182973971C3529A400680245 /* AppDelegate.h */,
+				182973981C3529A400680245 /* AppDelegate.m */,
+				1829739A1C3529A400680245 /* ViewController.h */,
+				1829739B1C3529A400680245 /* ViewController.m */,
+				1829739D1C3529A400680245 /* Main.storyboard */,
+				182973A01C3529A400680245 /* Images.xcassets */,
+				182973A21C3529A400680245 /* LaunchScreen.xib */,
+				182973931C3529A400680245 /* Supporting Files */,
+			);
+			path = KIGroupButton;
+			sourceTree = "<group>";
+		};
+		182973931C3529A400680245 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				182973941C3529A400680245 /* Info.plist */,
+				182973951C3529A400680245 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		182973AC1C3529A400680245 /* KIGroupButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				182973AF1C3529A400680245 /* KIGroupButtonTests.m */,
+				182973AD1C3529A400680245 /* Supporting Files */,
+			);
+			path = KIGroupButtonTests;
+			sourceTree = "<group>";
+		};
+		182973AD1C3529A400680245 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				182973AE1C3529A400680245 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		182973B91C3529BF00680245 /* KICheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				182973BA1C3529BF00680245 /* KICheckBox.h */,
+				182973BB1C3529BF00680245 /* KICheckBox.m */,
+			);
+			path = KICheckBox;
+			sourceTree = "<group>";
+		};
+		182973BC1C3529BF00680245 /* KIGroupButton */ = {
+			isa = PBXGroup;
+			children = (
+				182973BD1C3529BF00680245 /* KIGroupButton.h */,
+				182973BE1C3529BF00680245 /* KIGroupButton.m */,
+			);
+			path = KIGroupButton;
+			sourceTree = "<group>";
+		};
+		182973BF1C3529BF00680245 /* KIRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				182973C01C3529BF00680245 /* KIRadioButton.h */,
+				182973C11C3529BF00680245 /* KIRadioButton.m */,
+			);
+			path = KIRadioButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1829738F1C3529A400680245 /* KIGroupButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182973B31C3529A400680245 /* Build configuration list for PBXNativeTarget "KIGroupButton" */;
+			buildPhases = (
+				1829738C1C3529A400680245 /* Sources */,
+				1829738D1C3529A400680245 /* Frameworks */,
+				1829738E1C3529A400680245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIGroupButton;
+			productName = KIGroupButton;
+			productReference = 182973901C3529A400680245 /* KIGroupButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		182973A81C3529A400680245 /* KIGroupButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182973B61C3529A400680245 /* Build configuration list for PBXNativeTarget "KIGroupButtonTests" */;
+			buildPhases = (
+				182973A51C3529A400680245 /* Sources */,
+				182973A61C3529A400680245 /* Frameworks */,
+				182973A71C3529A400680245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182973AB1C3529A400680245 /* PBXTargetDependency */,
+			);
+			name = KIGroupButtonTests;
+			productName = KIGroupButtonTests;
+			productReference = 182973A91C3529A400680245 /* KIGroupButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		182973881C3529A400680245 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = SmartWalle;
+				TargetAttributes = {
+					1829738F1C3529A400680245 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					182973A81C3529A400680245 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 1829738F1C3529A400680245;
+					};
+				};
+			};
+			buildConfigurationList = 1829738B1C3529A400680245 /* Build configuration list for PBXProject "KIGroupButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 182973871C3529A400680245;
+			productRefGroup = 182973911C3529A400680245 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1829738F1C3529A400680245 /* KIGroupButton */,
+				182973A81C3529A400680245 /* KIGroupButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1829738E1C3529A400680245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1829739F1C3529A400680245 /* Main.storyboard in Resources */,
+				182973A41C3529A400680245 /* LaunchScreen.xib in Resources */,
+				182973A11C3529A400680245 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182973A71C3529A400680245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1829738C1C3529A400680245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1829739C1C3529A400680245 /* ViewController.m in Sources */,
+				182973991C3529A400680245 /* AppDelegate.m in Sources */,
+				182973C31C3529BF00680245 /* KIGroupButton.m in Sources */,
+				182973C41C3529BF00680245 /* KIRadioButton.m in Sources */,
+				182973C21C3529BF00680245 /* KICheckBox.m in Sources */,
+				182973961C3529A400680245 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182973A51C3529A400680245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182973B01C3529A400680245 /* KIGroupButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		182973AB1C3529A400680245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1829738F1C3529A400680245 /* KIGroupButton */;
+			targetProxy = 182973AA1C3529A400680245 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1829739D1C3529A400680245 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1829739E1C3529A400680245 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		182973A21C3529A400680245 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182973A31C3529A400680245 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		182973B11C3529A400680245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		182973B21C3529A400680245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		182973B41C3529A400680245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KIGroupButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		182973B51C3529A400680245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KIGroupButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		182973B71C3529A400680245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KIGroupButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIGroupButton.app/KIGroupButton";
+			};
+			name = Debug;
+		};
+		182973B81C3529A400680245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KIGroupButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIGroupButton.app/KIGroupButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1829738B1C3529A400680245 /* Build configuration list for PBXProject "KIGroupButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182973B11C3529A400680245 /* Debug */,
+				182973B21C3529A400680245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182973B31C3529A400680245 /* Build configuration list for PBXNativeTarget "KIGroupButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182973B41C3529A400680245 /* Debug */,
+				182973B51C3529A400680245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		182973B61C3529A400680245 /* Build configuration list for PBXNativeTarget "KIGroupButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182973B71C3529A400680245 /* Debug */,
+				182973B81C3529A400680245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 182973881C3529A400680245 /* Project object */;
+}

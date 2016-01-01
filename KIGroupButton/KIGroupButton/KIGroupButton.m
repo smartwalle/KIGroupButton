@@ -11,12 +11,7 @@
 
 #pragma mark - Lifecycle
 - (void)dealloc {
-    for (NSValue *v in _sharedButtons) {
-        if ([v nonretainedObjectValue] == self) {
-            [_sharedButtons removeObjectIdenticalTo:v];
-            break;
-        }
-    }
+    [self removeButton:self];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {

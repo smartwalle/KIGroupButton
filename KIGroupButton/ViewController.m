@@ -23,8 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.radioButton1 setSelected:YES];
-    [self.checkBox1 setSelected:YES];
+//    [self.radioButton1 selectWithTag:1002];
+    [self.radioButton1 selectWithValue:0];
+    [self.checkBox1 selectWithTag:2003];
 }
 
 - (void)didReceiveMemoryWarning {

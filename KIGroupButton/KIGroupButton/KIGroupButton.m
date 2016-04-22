@@ -11,12 +11,7 @@
 
 #pragma mark - Lifecycle
 - (void)dealloc {
-    for (NSValue *v in _sharedButtons) {
-        if ([v nonretainedObjectValue] == self) {
-            [_sharedButtons removeObjectIdenticalTo:v];
-            break;
-        }
-    }
+    [self removeButton:self];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -49,12 +44,52 @@
     }
 }
 
+- (void)addButton:(KIGroupButton *)button {
+    if (button == self) {
+        return ;
+    }
+    if (_sharedButtons == nil) {
+        _sharedButtons = [[NSMutableArray alloc] init];
+    }
+    
+    if (![self containsButton:button inList:_sharedButtons]) {
+        for (NSValue *v in button->_sharedButtons) {
+            if ([v nonretainedObjectValue] == button) {
+                [button->_sharedButtons removeObject:v];
+                break;
+            }
+        }
+        [_sharedButtons addObject:[NSValue valueWithNonretainedObject:button]];
+        button->_sharedButtons = _sharedButtons;
+    }
+}
+
+- (void)removeButton:(KIGroupButton *)button {
+    for (NSValue *v in _sharedButtons) {
+        if ([v nonretainedObjectValue] == button) {
+            [_sharedButtons removeObject:v];
+            button->_sharedButtons = nil;
+            break;
+        }
+    }
+}
+
+- (BOOL)containsButton:(KIGroupButton *)button inList:(NSArray *)list {
+    for (NSValue *v in list) {
+        if ([v nonretainedObjectValue] == button) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
 #pragma mark - Getters & Setters
 - (NSArray *)groupButtons {
     if ([_sharedButtons count]) {
         NSMutableArray *buttons = [[NSMutableArray alloc] initWithCapacity:_sharedButtons.count];
         for (NSValue *v in _sharedButtons) {
             [buttons addObject:[v nonretainedObjectValue]];
+            
         }
         return buttons;
     }
@@ -63,9 +98,9 @@
 
 - (void)setGroupButtons:(NSArray *)groupButtons {
     if (_sharedButtons == nil) {
-        for (KIGroupButton *rb in groupButtons) {
-            if (rb->_sharedButtons != nil) {
-                _sharedButtons = rb->_sharedButtons;
+        for (KIGroupButton *gb in groupButtons) {
+            if (gb->_sharedButtons != nil) {
+                _sharedButtons = gb->_sharedButtons;
                 break;
             }
         }
@@ -74,27 +109,18 @@
         }
     }
     
-    BOOL (^buttonExistInList)(NSArray *, KIGroupButton *) = ^(NSArray *list, KIGroupButton *rb) {
-        for (NSValue *v in list) {
-            if ([v nonretainedObjectValue] == rb) {
-                return YES;
-            }
-        }
-        return NO;
-    };
-    
-    if (!buttonExistInList(_sharedButtons, self)) {
+    if (![self containsButton:self inList:_sharedButtons]) {
         [_sharedButtons addObject:[NSValue valueWithNonretainedObject:self]];
     }
     
-    for (KIGroupButton *rb in groupButtons) {
-        if (rb->_sharedButtons != _sharedButtons) {
-            if (rb->_sharedButtons == nil) {
-                rb->_sharedButtons = _sharedButtons;
+    for (KIGroupButton *gb in groupButtons) {
+        if (gb->_sharedButtons != _sharedButtons) {
+            if (gb->_sharedButtons == nil) {
+                gb->_sharedButtons = _sharedButtons;
             } else {
-                for (NSValue *v in rb->_sharedButtons) {
+                for (NSValue *v in gb->_sharedButtons) {
                     KIGroupButton *temp = [v nonretainedObjectValue];
-                    if (!buttonExistInList(_sharedButtons, temp)) {
+                    if (![self containsButton:temp inList:_sharedButtons]) {
                         [_sharedButtons addObject:v];
                         temp->_sharedButtons = _sharedButtons;
                     }
@@ -102,8 +128,8 @@
             }
         }
         
-        if (!buttonExistInList(_sharedButtons, rb)) {
-            [_sharedButtons addObject:[NSValue valueWithNonretainedObject:rb]];
+        if (![self containsButton:gb inList:_sharedButtons]) {
+            [_sharedButtons addObject:[NSValue valueWithNonretainedObject:gb]];
         }
     }
 }

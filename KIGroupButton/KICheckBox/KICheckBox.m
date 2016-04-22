@@ -38,7 +38,7 @@
     [self setSelected:selected sendControlEvent:NO];
 }
 
-- (void)setSelectedWithTag:(NSInteger)tag {
+- (void)selectWithTag:(NSInteger)tag {
     if (self.tag == tag) {
         [self setSelected:YES sendControlEvent:NO];
     } else {
@@ -47,6 +47,19 @@
             if (cb.tag == tag) {
                 [cb setSelected:YES sendControlEvent:NO];
                 break;
+            }
+        }
+    }
+}
+
+- (void)selectWithValue:(NSInteger)value {
+    if (self.value == value) {
+        [self setSelected:YES sendControlEvent:NO];
+    } else {
+        for (NSValue *v in _sharedButtons) {
+            KICheckBox *cb = [v nonretainedObjectValue];
+            if (cb.value == value) {
+                [cb setSelected:YES sendControlEvent:NO];
             }
         }
     }

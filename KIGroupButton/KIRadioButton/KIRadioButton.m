@@ -41,7 +41,7 @@
     [self setSelected:selected distinct:YES sendControlEvent:NO];
 }
 
-- (void)setSelectedWithTag:(NSInteger)tag {
+- (void)selectWithTag:(NSInteger)tag {
     if (self.tag == tag) {
         [self setSelected:YES distinct:YES sendControlEvent:NO];
     } else {
@@ -49,6 +49,20 @@
             KIRadioButton *rb = [v nonretainedObjectValue];
             if (rb.tag == tag) {
                 [rb setSelected:YES distinct:YES sendControlEvent:NO];
+                break;
+            }
+        }
+    }
+}
+
+- (void)selectWithValue:(NSInteger)value {
+    if (self.value == value) {
+        [self setSelected:YES sendControlEvent:NO];
+    } else {
+        for (NSValue *v in _sharedButtons) {
+            KIRadioButton *rb = [v nonretainedObjectValue];
+            if (rb.value == value) {
+                [rb setSelected:YES sendControlEvent:NO];
                 break;
             }
         }

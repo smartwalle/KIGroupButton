@@ -17,6 +17,8 @@
 
 - (void)setSelected:(BOOL)selected;
 
-- (void)setSelectedWithTag:(NSInteger)tag;
+- (void)selectWithTag:(NSInteger)tag;
+
+- (void)selectWithValue:(NSInteger)value;
 
 @end

@@ -15,4 +15,10 @@
 
 @property (nonatomic, strong) IBOutletCollection(KIGroupButton) NSArray *groupButtons;
 
+@property (nonatomic, assign) IBInspectable NSInteger value;
+
+- (void)addButton:(KIGroupButton *)button;
+
+- (void)removeButton:(KIGroupButton *)button;
+
 @end

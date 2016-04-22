@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8C500B81-947C-4C1C-BC08-07A43D2E2221</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KIGroupButton</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>732C191F2437AF94C86F43586936DA73D6ED44C8</key>
+		<string>github.com:smartwalle/KIGroupButton.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KIGroupButton.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>732C191F2437AF94C86F43586936DA73D6ED44C8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:smartwalle/KIGroupButton.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>732C191F2437AF94C86F43586936DA73D6ED44C8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>732C191F2437AF94C86F43586936DA73D6ED44C8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KIGroupButton</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -58,14 +58,21 @@
     }
     
     if (![self containsButton:button inList:_sharedButtons]) {
-        for (NSValue *v in button->_sharedButtons) {
-            if ([v nonretainedObjectValue] == button) {
-                [button->_sharedButtons removeObject:v];
-                break;
-            }
-        }
+        
+        NSMutableArray *tempList = button->_sharedButtons;
+        [button removeButton:button];
         [_sharedButtons addObject:[NSValue valueWithNonretainedObject:button]];
         button->_sharedButtons = _sharedButtons;
+        
+        for (NSValue *v in tempList) {
+            KIGroupButton *btn = (KIGroupButton *)[v nonretainedObjectValue];
+            if (btn != self && ![self containsButton:btn inList:_sharedButtons]) {
+                [btn removeButton:btn];
+                [_sharedButtons addObject:[NSValue valueWithNonretainedObject:btn]];
+                btn->_sharedButtons = _sharedButtons;
+            }
+        }
+       
     }
 }
 

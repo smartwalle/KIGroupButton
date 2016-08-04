@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet KIRadioButton *radioButton1;
 @property (weak, nonatomic) IBOutlet KIRadioButton *radioButton2;
 @property (weak, nonatomic) IBOutlet KIRadioButton *radioButton3;
+@property (weak, nonatomic) IBOutlet KIRadioButton *radioButton4;
 @property (weak, nonatomic) IBOutlet KICheckBox *checkBox1;
 @property (weak, nonatomic) IBOutlet UILabel *infoLab;
 
@@ -29,8 +30,9 @@
 //    [self.radioButton1 selectWithValue:0];
 //    [self.checkBox1 selectWithTag:2003];
     
-    [self.radioButton1 addButton:self.radioButton2];
-    [self.radioButton1 addButton:self.radioButton3];
+//    [self.radioButton1 addButton:self.radioButton2];
+//    [self.radioButton3 addButton:self.radioButton4];
+//    [self.radioButton3 addButton:self.radioButton1];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -26,6 +26,10 @@
                                 <state key="selected" image="radio_button_on.png">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <outletCollection property="groupButtons" destination="gaR-lZ-veA" id="aLo-e8-vvj"/>
+                                    <outletCollection property="groupButtons" destination="wMO-Po-cUW" id="Lfq-MU-IJT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1003" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nz-ZS-z9p" customClass="KIRadioButton">
                                 <rect key="frame" x="239" y="64" width="58" height="17"/>
@@ -74,6 +78,9 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="groupButtons" destination="2Nz-ZS-z9p" id="Ydu-f4-spX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLZ-Lw-5he" customClass="KICheckBox">
                                 <rect key="frame" x="131" y="180" width="58" height="17"/>
@@ -113,6 +120,16 @@
                                     <action selector="confirmAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uWP-xr-hfk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMO-Po-cUW" customClass="KIRadioButton">
+                                <rect key="frame" x="22" y="97" width="58" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="选项四" image="radio_button_off.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" image="radio_button_on.png">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -123,6 +140,7 @@
                         <outlet property="radioButton1" destination="FNu-PV-8pv" id="5uh-Yj-flK"/>
                         <outlet property="radioButton2" destination="gaR-lZ-veA" id="N7K-A3-j8G"/>
                         <outlet property="radioButton3" destination="2Nz-ZS-z9p" id="H7d-AH-yRO"/>
+                        <outlet property="radioButton4" destination="wMO-Po-cUW" id="xqP-vh-UQs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

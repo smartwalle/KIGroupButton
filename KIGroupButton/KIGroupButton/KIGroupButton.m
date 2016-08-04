@@ -52,6 +52,11 @@
         _sharedButtons = [[NSMutableArray alloc] init];
     }
     
+    // 2016.08.04 修正通过 addButton 方法添加 Button 不能处理自身状态的 Bug.
+    if (![self containsButton:self inList:_sharedButtons]) {
+        [_sharedButtons addObject:[NSValue valueWithNonretainedObject:self]];
+    }
+    
     if (![self containsButton:button inList:_sharedButtons]) {
         for (NSValue *v in button->_sharedButtons) {
             if ([v nonretainedObjectValue] == button) {

@@ -13,6 +13,8 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet KIRadioButton *radioButton1;
+@property (weak, nonatomic) IBOutlet KIRadioButton *radioButton2;
+@property (weak, nonatomic) IBOutlet KIRadioButton *radioButton3;
 @property (weak, nonatomic) IBOutlet KICheckBox *checkBox1;
 @property (weak, nonatomic) IBOutlet UILabel *infoLab;
 
@@ -24,8 +26,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 //    [self.radioButton1 selectWithTag:1002];
-    [self.radioButton1 selectWithValue:0];
-    [self.checkBox1 selectWithTag:2003];
+//    [self.radioButton1 selectWithValue:0];
+//    [self.checkBox1 selectWithTag:2003];
+    
+    [self.radioButton1 addButton:self.radioButton2];
+    [self.radioButton1 addButton:self.radioButton3];
 }
 
 - (void)didReceiveMemoryWarning {

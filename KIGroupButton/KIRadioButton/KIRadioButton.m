@@ -62,7 +62,8 @@
         for (NSValue *v in _sharedButtons) {
             KIRadioButton *rb = [v nonretainedObjectValue];
             if (rb.value == value) {
-                [rb setSelected:YES sendControlEvent:NO];
+                // 2016.08.05 修正调用此方法之后，不能取消其它已选中组件的 Bug.
+                [rb setSelected:YES distinct:YES sendControlEvent:NO];
                 break;
             }
         }

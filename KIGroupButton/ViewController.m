@@ -30,9 +30,11 @@
 //    [self.radioButton1 selectWithValue:0];
 //    [self.checkBox1 selectWithTag:2003];
     
-//    [self.radioButton1 addButton:self.radioButton2];
-//    [self.radioButton3 addButton:self.radioButton4];
-//    [self.radioButton3 addButton:self.radioButton1];
+    [self.radioButton1 addButton:self.radioButton2];
+    [self.radioButton3 addButton:self.radioButton4];
+    [self.radioButton3 addButton:self.radioButton1];
+    
+//    [self.radioButton1 selectWithValue:3];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,13 +43,14 @@
 }
 
 - (IBAction)confirmAction:(id)sender {
-    NSString *radioText = self.radioButton1.selectedButton.titleLabel.text;
-    NSMutableString *checkBoxText = [@"" mutableCopy];
-    for (KICheckBox *cb in self.checkBox1.selectedButtons) {
-        [checkBoxText appendFormat:@"%@ ", cb.titleLabel.text];
-    }
-    
-    [self.infoLab setText:[NSString stringWithFormat:@"选中单选项: %@ \n选中了多选项：%@", radioText, checkBoxText]];
+    [self.radioButton1 selectWithValue:2];
+//    NSString *radioText = self.radioButton1.selectedButton.titleLabel.text;
+//    NSMutableString *checkBoxText = [@"" mutableCopy];
+//    for (KICheckBox *cb in self.checkBox1.selectedButtons) {
+//        [checkBoxText appendFormat:@"%@ ", cb.titleLabel.text];
+//    }
+//    
+//    [self.infoLab setText:[NSString stringWithFormat:@"选中单选项: %@ \n选中了多选项：%@", radioText, checkBoxText]];
 }
 
 @end

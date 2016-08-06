@@ -72,12 +72,12 @@
 
 - (void)setSelected:(BOOL)selected distinct:(BOOL)distinct sendControlEvent:(BOOL)sendControlEvent {
     [self setSelected:selected sendControlEvent:sendControlEvent];
-    if (distinct && (selected || [_sharedButtons count] == 2)) {
-        selected = !selected;
+    if (distinct && selected) {
+//        selected = !selected;
         for (NSValue *v in self->_sharedButtons) {
             KIRadioButton *rb = [v nonretainedObjectValue];
             if (rb != self) {
-                [rb setSelected:selected sendControlEvent:sendControlEvent];
+                [rb setSelected:NO sendControlEvent:sendControlEvent];
             }
         }
     }

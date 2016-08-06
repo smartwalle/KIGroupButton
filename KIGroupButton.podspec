@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KIGroupButton"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "KIGroupButton"
   s.description  = <<-DESC
                   KIGroupButton.

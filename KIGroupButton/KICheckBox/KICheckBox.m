@@ -67,9 +67,11 @@
 
 - (void)setSelected:(BOOL)selected sendControlEvent:(BOOL)sendControlEvent {
     BOOL valueChanged = (self.selected != selected);
-    [super setSelected:selected];
-    if (valueChanged && sendControlEvent) {
-        [self sendActionsForControlEvents:UIControlEventValueChanged];
+    if (valueChanged) {
+        [super setSelected:selected];
+        if (sendControlEvent) {
+            [self sendActionsForControlEvents:UIControlEventValueChanged];
+        }
     }
 }
 
